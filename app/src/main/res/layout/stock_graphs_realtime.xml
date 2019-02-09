@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/linecharts"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:id="@+id/radioGroup">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+        <RadioButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:buttonTint="#2C3646"
+         android:text="1 day"
+        android:layout_weight="1"
+         android:id="@+id/c1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonTint="#2C3646"
+            android:text="5 days"
+            android:id="@+id/c2"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonTint="#2C3646"
+            android:layout_weight="1"
+            android:text="1 month"
+            android:id="@+id/c3"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonTint="#2C3646"
+            android:text="3mth"
+            android:id="@+id/c4"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:buttonTint="#2C3646"
+            android:text="6 mth"
+            android:layout_weight="1"
+            android:id="@+id/c5"
+            />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="#2C3646"
+                android:text="1 years"
+                android:layout_weight="1"
+                android:id="@+id/c6"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="#2C3646"
+                android:layout_weight="1"
+                android:text="2 yrs"
+                android:id="@+id/c7"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="#2C3646"
+                android:layout_weight="1"
+                android:text="5 yrs"
+                android:id="@+id/c8"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="#2C3646"
+                android:layout_weight="1"
+                android:text="Max"
+                android:id="@+id/c9"
+                />
+        </LinearLayout>
+</RadioGroup>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>

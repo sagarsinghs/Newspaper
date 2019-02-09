@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TableLayout
+        android:id="@+id/tabla_cuerpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:background="@drawable/cell_shape"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_import_export_black_24dp"
+                android:text="Company"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="80dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:text="Price"
+                android:textSize="16dp"
+                android:drawableRight="@drawable/ic_import_export_black_24dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="80dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:drawableRight="@drawable/ic_import_export_black_24dp"
+                android:layout_weight="1"
+                android:text="Chg"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="80dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:drawableRight="@drawable/ic_import_export_black_24dp"
+                android:layout_weight="1"
+                android:text="chg %"
+                android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+        </TableRow>
+
+
+    </TableLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_height="match_parent"
+    android:id="@+id/recycler_view">
+
+</android.support.v7.widget.RecyclerView>
+</LinearLayout>
