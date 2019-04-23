@@ -1,10 +1,6 @@
 package sangamsagar.newspapertime;
 
 
-//
-api_key_1 = dd58977a4b15400da37c91936335d8dd
-api_key_2 = d45c028365924b0c8aa07d7e9099654b
-
 public class URLNames {
 
 
